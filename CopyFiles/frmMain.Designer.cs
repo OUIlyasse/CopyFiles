@@ -35,12 +35,15 @@
             this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
             this.linkBrowseFolder = new System.Windows.Forms.Button();
+            this.linkBrowseFile = new System.Windows.Forms.Button();
+            this.txtFile = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCopy
             // 
             this.btnCopy.Font = new System.Drawing.Font("Lucida Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopy.Location = new System.Drawing.Point(169, 117);
+            this.btnCopy.Location = new System.Drawing.Point(169, 185);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(244, 54);
             this.btnCopy.TabIndex = 5;
@@ -51,7 +54,7 @@
             // txtFolder
             // 
             this.txtFolder.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtFolder.Location = new System.Drawing.Point(29, 66);
+            this.txtFolder.Location = new System.Drawing.Point(29, 134);
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.ReadOnly = true;
             this.txtFolder.Size = new System.Drawing.Size(441, 28);
@@ -60,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 44);
+            this.label2.Location = new System.Drawing.Point(29, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(214, 19);
             this.label2.TabIndex = 3;
@@ -77,18 +80,52 @@
             this.linkBrowseFolder.FlatAppearance.BorderSize = 0;
             this.linkBrowseFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.linkBrowseFolder.Image = global::CopyFiles.Properties.Resources.icons8_folder_36px;
-            this.linkBrowseFolder.Location = new System.Drawing.Point(487, 58);
+            this.linkBrowseFolder.Location = new System.Drawing.Point(487, 126);
             this.linkBrowseFolder.Name = "linkBrowseFolder";
             this.linkBrowseFolder.Size = new System.Drawing.Size(48, 44);
             this.linkBrowseFolder.TabIndex = 8;
             this.linkBrowseFolder.UseVisualStyleBackColor = true;
             this.linkBrowseFolder.Click += new System.EventHandler(this.linkBrowseFolder_Click);
             // 
+            // linkBrowseFile
+            // 
+            this.linkBrowseFile.AutoSize = true;
+            this.linkBrowseFile.FlatAppearance.BorderSize = 0;
+            this.linkBrowseFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.linkBrowseFile.Image = global::CopyFiles.Properties.Resources.icons8_folder_36px;
+            this.linkBrowseFile.Location = new System.Drawing.Point(487, 37);
+            this.linkBrowseFile.Name = "linkBrowseFile";
+            this.linkBrowseFile.Size = new System.Drawing.Size(48, 44);
+            this.linkBrowseFile.TabIndex = 11;
+            this.linkBrowseFile.UseVisualStyleBackColor = true;
+            this.linkBrowseFile.Click += new System.EventHandler(this.linkBrowseFile_Click);
+            // 
+            // txtFile
+            // 
+            this.txtFile.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtFile.Location = new System.Drawing.Point(29, 45);
+            this.txtFile.Name = "txtFile";
+            this.txtFile.ReadOnly = true;
+            this.txtFile.Size = new System.Drawing.Size(441, 28);
+            this.txtFile.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 19);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Choisir un Fichier";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 201);
+            this.ClientSize = new System.Drawing.Size(582, 257);
+            this.Controls.Add(this.linkBrowseFile);
+            this.Controls.Add(this.txtFile);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.linkBrowseFolder);
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.txtFolder);
@@ -113,6 +150,9 @@
         private System.Windows.Forms.OpenFileDialog ofd;
         private System.Windows.Forms.FolderBrowserDialog fbd;
         private System.Windows.Forms.Button linkBrowseFolder;
+        private System.Windows.Forms.Button linkBrowseFile;
+        private System.Windows.Forms.TextBox txtFile;
+        private System.Windows.Forms.Label label1;
     }
 }
 

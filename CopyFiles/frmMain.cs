@@ -11,7 +11,7 @@ namespace CopyFiles
         {
             try
             {
-                string extPath = Properties.Settings.Default.extPath.ToString();
+                string extPath = txtFile.Text;
                 string fileName = Path.GetFileName(extPath);
                 string nouvPath = txtFolder.Text;
                 string nouvFile = string.Format(@"{0}\{1}", nouvPath, fileName);
@@ -43,6 +43,13 @@ namespace CopyFiles
                 MessageBox.Show("Votre fichier a copié correctement", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void linkBrowseFile_Click(object sender, EventArgs e)
+        {
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                txtFile.Text = ofd.FileName;
+            }
+        }
         private void linkBrowseFolder_Click(object sender, EventArgs e)
         {
             if (fbd.ShowDialog() == DialogResult.OK)
