@@ -46,7 +46,7 @@
             this.btnCopy.Location = new System.Drawing.Point(169, 185);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(244, 54);
-            this.btnCopy.TabIndex = 5;
+            this.btnCopy.TabIndex = 4;
             this.btnCopy.Text = "&Copier";
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
@@ -58,7 +58,7 @@
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.ReadOnly = true;
             this.txtFolder.Size = new System.Drawing.Size(441, 28);
-            this.txtFolder.TabIndex = 4;
+            this.txtFolder.TabIndex = 2;
             // 
             // label2
             // 
@@ -83,7 +83,7 @@
             this.linkBrowseFolder.Location = new System.Drawing.Point(487, 126);
             this.linkBrowseFolder.Name = "linkBrowseFolder";
             this.linkBrowseFolder.Size = new System.Drawing.Size(48, 44);
-            this.linkBrowseFolder.TabIndex = 8;
+            this.linkBrowseFolder.TabIndex = 3;
             this.linkBrowseFolder.UseVisualStyleBackColor = true;
             this.linkBrowseFolder.Click += new System.EventHandler(this.linkBrowseFolder_Click);
             // 
@@ -96,7 +96,7 @@
             this.linkBrowseFile.Location = new System.Drawing.Point(487, 37);
             this.linkBrowseFile.Name = "linkBrowseFile";
             this.linkBrowseFile.Size = new System.Drawing.Size(48, 44);
-            this.linkBrowseFile.TabIndex = 11;
+            this.linkBrowseFile.TabIndex = 1;
             this.linkBrowseFile.UseVisualStyleBackColor = true;
             this.linkBrowseFile.Click += new System.EventHandler(this.linkBrowseFile_Click);
             // 
@@ -107,7 +107,7 @@
             this.txtFile.Name = "txtFile";
             this.txtFile.ReadOnly = true;
             this.txtFile.Size = new System.Drawing.Size(441, 28);
-            this.txtFile.TabIndex = 10;
+            this.txtFile.TabIndex = 0;
             // 
             // label1
             // 
